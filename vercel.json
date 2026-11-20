@@ -1,5 +1,9 @@
 {
-  "public": true,
-  "cleanUrls": true,
-  "trailingSlash": false
+  "rewrites": [
+    { "source": "/teca", "destination": "/teca.html" },
+    { "source": "/dutra", "destination": "/dutra.html" },
+    { "source": "/b2b", "destination": "/b2b.html" },
+    { "source": "/sobre", "destination": "/sobre.html" },
+    { "source": "/contato", "destination": "/contato.html" }
+  ]
 }
