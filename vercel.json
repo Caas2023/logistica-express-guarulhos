@@ -1,9 +1,224 @@
 {
   "rewrites": [
-    { "source": "/teca", "destination": "/teca.html" },
-    { "source": "/dutra", "destination": "/dutra.html" },
-    { "source": "/b2b", "destination": "/b2b.html" },
-    { "source": "/sobre", "destination": "/sobre.html" },
-    { "source": "/contato", "destination": "/contato.html" }
+    {
+      "source": "/contato",
+      "destination": "/contato.html"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/sobre.html"
+    },
+    {
+      "source": "/b2b",
+      "destination": "/b2b.html"
+    },
+    {
+      "source": "/dutra",
+      "destination": "/dutra.html"
+    },
+    {
+      "source": "/teca",
+      "destination": "/teca.html"
+    },
+    {
+      "source": "/jardim-tranquilidade",
+      "destination": "/jardim-tranquilidade.html"
+    },
+    {
+      "source": "/agua-chata",
+      "destination": "/agua-chata.html"
+    },
+    {
+      "source": "/bananal",
+      "destination": "/bananal.html"
+    },
+    {
+      "source": "/bonsucesso-industrial",
+      "destination": "/bonsucesso-industrial.html"
+    },
+    {
+      "source": "/bonsucesso",
+      "destination": "/bonsucesso.html"
+    },
+    {
+      "source": "/bosque-maia",
+      "destination": "/bosque-maia.html"
+    },
+    {
+      "source": "/cabucu",
+      "destination": "/cabucu.html"
+    },
+    {
+      "source": "/cecap",
+      "destination": "/cecap.html"
+    },
+    {
+      "source": "/centro",
+      "destination": "/centro.html"
+    },
+    {
+      "source": "/cidade-industrial-satelite",
+      "destination": "/cidade-industrial-satelite.html"
+    },
+    {
+      "source": "/cocaia",
+      "destination": "/cocaia.html"
+    },
+    {
+      "source": "/coleta-cargas-aereas-guarulhos",
+      "destination": "/coleta-cargas-aereas-guarulhos.html"
+    },
+    {
+      "source": "/coleta-teca-aeroporto",
+      "destination": "/coleta-teca-aeroporto.html"
+    },
+    {
+      "source": "/cumbica",
+      "destination": "/cumbica.html"
+    },
+    {
+      "source": "/distribuicao-encomendas-guarulhos",
+      "destination": "/distribuicao-encomendas-guarulhos.html"
+    },
+    {
+      "source": "/entrega-documentos-cartorio-guarulhos",
+      "destination": "/entrega-documentos-cartorio-guarulhos.html"
+    },
+    {
+      "source": "/entrega-exames-laboratoriais",
+      "destination": "/entrega-exames-laboratoriais.html"
+    },
+    {
+      "source": "/entrega-malotes-guarulhos",
+      "destination": "/entrega-malotes-guarulhos.html"
+    },
+    {
+      "source": "/fortaleza",
+      "destination": "/fortaleza.html"
+    },
+    {
+      "source": "/gopouva",
+      "destination": "/gopouva.html"
+    },
+    {
+      "source": "/haroldo-veloso",
+      "destination": "/haroldo-veloso.html"
+    },
+    {
+      "source": "/inocoop",
+      "destination": "/inocoop.html"
+    },
+    {
+      "source": "/jardim-bela-vista",
+      "destination": "/jardim-bela-vista.html"
+    },
+    {
+      "source": "/jardim-city",
+      "destination": "/jardim-city.html"
+    },
+    {
+      "source": "/lavras",
+      "destination": "/lavras.html"
+    },
+    {
+      "source": "/logistica-b2b-guarulhos",
+      "destination": "/logistica-b2b-guarulhos.html"
+    },
+    {
+      "source": "/macedo",
+      "destination": "/macedo.html"
+    },
+    {
+      "source": "/mikail",
+      "destination": "/mikail.html"
+    },
+    {
+      "source": "/morros",
+      "destination": "/morros.html"
+    },
+    {
+      "source": "/motoboy-24-horas-guarulhos",
+      "destination": "/motoboy-24-horas-guarulhos.html"
+    },
+    {
+      "source": "/motoboy-aeroporto-gru",
+      "destination": "/motoboy-aeroporto-gru.html"
+    },
+    {
+      "source": "/motoboy-empresarial-guarulhos",
+      "destination": "/motoboy-empresarial-guarulhos.html"
+    },
+    {
+      "source": "/motoboy-urgente-guarulhos",
+      "destination": "/motoboy-urgente-guarulhos.html"
+    },
+    {
+      "source": "/motofrete-corporativo-guarulhos",
+      "destination": "/motofrete-corporativo-guarulhos.html"
+    },
+    {
+      "source": "/motofrete-industrias-dutra",
+      "destination": "/motofrete-industrias-dutra.html"
+    },
+    {
+      "source": "/paraventi",
+      "destination": "/paraventi.html"
+    },
+    {
+      "source": "/picanco",
+      "destination": "/picanco.html"
+    },
+    {
+      "source": "/ponte-grande",
+      "destination": "/ponte-grande.html"
+    },
+    {
+      "source": "/presidente-dutra",
+      "destination": "/presidente-dutra.html"
+    },
+    {
+      "source": "/santa-mena",
+      "destination": "/santa-mena.html"
+    },
+    {
+      "source": "/servico-estafeta-guarulhos",
+      "destination": "/servico-estafeta-guarulhos.html"
+    },
+    {
+      "source": "/taboao",
+      "destination": "/taboao.html"
+    },
+    {
+      "source": "/torres-tibagy",
+      "destination": "/torres-tibagy.html"
+    },
+    {
+      "source": "/transporte-pecas-industriais-guarulhos",
+      "destination": "/transporte-pecas-industriais-guarulhos.html"
+    },
+    {
+      "source": "/vila-augusta",
+      "destination": "/vila-augusta.html"
+    },
+    {
+      "source": "/vila-endres",
+      "destination": "/vila-endres.html"
+    },
+    {
+      "source": "/vila-galvao",
+      "destination": "/vila-galvao.html"
+    },
+    {
+      "source": "/vila-itapegica",
+      "destination": "/vila-itapegica.html"
+    },
+    {
+      "source": "/vila-rio",
+      "destination": "/vila-rio.html"
+    },
+    {
+      "source": "/vila-rosalia",
+      "destination": "/vila-rosalia.html"
+    }
   ]
 }

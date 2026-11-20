@@ -1,0 +1,53 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "teca.html"
+        ],
+        "createdAt": "2026-11-20T04:23:41.845Z",
+        "reason": "Design system responsive scale approved"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "dutra.html"
+        ],
+        "createdAt": "2026-11-20T04:23:41.852Z",
+        "reason": "Design system responsive scale approved"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "b2b.html"
+        ],
+        "createdAt": "2026-11-20T04:23:41.861Z",
+        "reason": "Design system responsive scale approved"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "contato.html"
+        ],
+        "createdAt": "2026-11-20T04:23:41.870Z",
+        "reason": "Design system responsive scale approved"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-20T04:23:41.878Z",
+        "reason": "Design system responsive scale approved"
+      }
+    ]
+  }
+}
