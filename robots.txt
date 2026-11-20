@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://logistica-express-guarulhos.vercel.app/sitemap.xml
