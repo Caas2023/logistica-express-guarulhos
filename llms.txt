@@ -1,0 +1,15 @@
+# Motoboy e Logística Express (Guarulhos-SP)
+
+> Empresa especializada em motofrete corporativo, coleta urgente de cargas aéreas no TECA GRU, distribuição B2B e transporte de malotes e peças na Rodovia Presidente Dutra e Grande São Paulo.
+
+## Páginas Principais
+- [Início](https://logistica-express-guarulhos-qosg.vercel.app/): Visão geral dos serviços de logística e motofrete em Guarulhos.
+- [Coleta TECA GRU](https://logistica-express-guarulhos-qosg.vercel.app/teca.html): Retirada de cargas e encomendas no Terminal de Cargas do Aeroporto de Guarulhos com conferência de AWB.
+- [Rodovia Dutra e Vila Itapegica](https://logistica-express-guarulhos-qosg.vercel.app/dutra.html): Atendimento expresso ao longo da Rodovia Presidente Dutra e arredores.
+- [Logística B2B e Indústrias](https://logistica-express-guarulhos-qosg.vercel.app/b2b.html): Soluções corporativas, malotes regulares e transporte de peças para indústrias.
+- [Sobre Nós](https://logistica-express-guarulhos-qosg.vercel.app/sobre.html): Nossa história, compromisso e base operacional em Guarulhos.
+- [Contato e Cotação](https://logistica-express-guarulhos-qosg.vercel.app/contato.html): Canais de atendimento imediato via WhatsApp e telefone.
+
+## Contato Comercial
+- Telefone / WhatsApp: (11) 95724-8425
+- Endereço: Rod. Pres. Dutra - Pista Lateral, 225 - Vila Itapegica, Guarulhos - SP, 07034-911
