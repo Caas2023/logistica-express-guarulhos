@@ -1,59 +1,56 @@
 import os
 
 pages = [
-    # Bairros e Regiões de Guarulhos (1 a 35)
-    ("centro", "Centro de Guarulhos", "Atendimento expresso para comércio, clínicas e escritórios no Centro de Guarulhos."),
-    ("bosque-maia", "Bosque Maia", "Motofrete rápido e seguro para a região do Bosque Maia e Av. Paulo Faccini."),
-    ("vila-augusta", "Vila Augusta", "Entregas corporativas e documentos na Vila Augusta e arredores."),
-    ("macedo", "Macedo", "Logística ágil e motofrete empresarial no bairro Macedo e proximidades."),
-    ("gopouva", "Gopoúva", "Serviço de motoboy e transporte de malotes no Gopoúva."),
-    ("vila-galvao", "Vila Galvão", "Entregas urgentes e motofrete na Vila Galvão e Zona Norte de Guarulhos."),
-    ("picanco", "Picanço", "Motoboy rápido e seguro no Picanço e Av. Timóteo Penteado."),
-    ("santa-mena", "Jardim Santa Mena", "Entrega expressa de documentos e contratos no Jardim Santa Mena."),
-    ("cumbica", "Cumbica", "Logística e motofrete no polo industrial de Cumbica e base aérea."),
-    ("bonsucesso", "Bonsucesso", "Atendimento a indústrias e galpões no Bonsucesso e região leste."),
-    ("cabucu", "Cabuçu", "Serviço de motofrete e entregas na região do Cabuçu."),
-    ("presidente-dutra", "Bairro Presidente Dutra", "Motoboy e distribuição rápida no bairro Presidente Dutra e margens da Dutra."),
-    ("taboao", "Taboão", "Entregas corporativas e transporte de peças no Taboão."),
-    ("cocaia", "Cocaia", "Logística e motofrete ágil no Cocaia."),
-    ("vila-itapegica", "Vila Itapegica", "Base e atendimento imediato na Vila Itapegica e Rodovia Dutra."),
-    ("paraventi", "Paraventi", "Motoboy pontual e seguro no Paraventi."),
-    ("ponte-grande", "Ponte Grande", "Entregas expressas e malotes na Ponte Grande."),
-    ("cecap", "Parque Residencial CECAP", "Atendimento rápido no CECAP e terminais adjacentes."),
-    ("inocoop", "Inocoop", "Serviço de motofrete no Inocoop e Bonsucesso."),
-    ("agua-chata", "Água Chata", "Logística B2B e transporte de cargas leves no Água Chata."),
+    ("centro", "Centro de Guarulhos", "Atendimento expresso para comércio, clínicas, escritórios e cartórios no Centro de Guarulhos e arredores."),
+    ("bosque-maia", "Bosque Maia", "Motofrete rápido e seguro para a região do Bosque Maia, Av. Paulo Faccini e condomínios residenciais e comerciais."),
+    ("vila-augusta", "Vila Augusta", "Entregas corporativas, malotes e documentos na Vila Augusta, próximo ao Parque Shopping Maia."),
+    ("macedo", "Macedo", "Logística ágil e motofrete empresarial no bairro Macedo, Av. Emílio Ribas e proximidades."),
+    ("gopouva", "Gopoúva", "Serviço de motoboy e transporte de malotes e exames laboratoriais no Gopoúva."),
+    ("vila-galvao", "Vila Galvão", "Entregas urgentes e motofrete na Vila Galvão, Av. Júlio Buono e Zona Norte de Guarulhos."),
+    ("picanco", "Picanço", "Motoboy rápido e seguro no Picanço, Av. Timóteo Penteado e proximidades do cemitério e comércios."),
+    ("santa-mena", "Jardim Santa Mena", "Entrega expressa de documentos, passaportes e contratos no Jardim Santa Mena e vias de acesso."),
+    ("cumbica", "Cumbica", "Logística e motofrete no polo industrial de Cumbica, base aérea e proximidades da Rodovia Dutra."),
+    ("bonsucesso", "Bonsucesso", "Atendimento robusto a indústrias, galpões e centros de distribuição no Bonsucesso e região leste."),
+    ("cabucu", "Cabuçu", "Serviço de motofrete e entregas na região do Cabuçu, rodovias e loteamentos."),
+    ("presidente-dutra", "Bairro Presidente Dutra", "Motoboy e distribuição rápida no bairro Presidente Dutra e margens da Rodovia Dutra."),
+    ("taboao", "Taboão", "Entregas corporativas e transporte de peças industriais no Taboão e comércios locais."),
+    ("cocaia", "Cocaia", "Logística e motofrete ágil no Cocaia e bairros vizinhos."),
+    ("vila-itapegica", "Vila Itapegica", "Base e atendimento imediato na Vila Itapegica, Rodovia Dutra e proximidades do Internacional Shopping."),
+    ("paraventi", "Paraventi", "Motoboy pontual e seguro no Paraventi e vias de ligação com o aeroporto."),
+    ("ponte-grande", "Ponte Grande", "Entregas expressas e malotes na Ponte Grande e margens do Rio Tietê."),
+    ("cecap", "Parque Residencial CECAP", "Atendimento rápido no CECAP, comércios locais e terminais adjacentes."),
+    ("inocoop", "Inocoop", "Serviço de motofrete no Inocoop, Bonsucesso e condomínios da região."),
+    ("agua-chata", "Água Chata", "Logística B2B e transporte de cargas leves no Água Chata e polo comercial."),
     ("jardim-tranquilidade", "Jardim Tranquilidade", "Motoboy para comércios e residências no Jardim Tranquilidade."),
-    ("vila-endres", "Vila Endres", "Entregas e malotes corporativos na Vila Endres e região do Shopping."),
-    ("torres-tibagy", "Torres Tibagy", "Serviço de motofrete ágil em Torres Tibagy."),
-    ("jardim-bela-vista", "Jardim Bela Vista", "Atendimento pontual no Jardim Bela Vista."),
-    ("jardim-city", "Jardim City", "Motoboy expresso no Jardim City."),
-    ("vila-rio", "Vila Rio", "Entregas rápidas na Vila Rio de Janeiro."),
-    ("haroldo-veloso", "Haroldo Veloso", "Motofrete seguro no Haroldo Veloso."),
-    ("lavras", "Lavras", "Logística e motofrete no bairro Lavras."),
+    ("vila-endres", "Vila Endres", "Entregas e malotes corporativos na Vila Endres e região do Shopping Internacional."),
+    ("torres-tibagy", "Torres Tibagy", "Serviço de motofrete ágil em Torres Tibagy e Av. Dr. Timóteo Penteado."),
+    ("jardim-bela-vista", "Jardim Bela Vista", "Atendimento pontual no Jardim Bela Vista e comércios locais."),
+    ("jardim-city", "Jardim City", "Motoboy expresso no Jardim City e condomínios fechados."),
+    ("vila-rio", "Vila Rio", "Entregas rápidas na Vila Rio de Janeiro e Av. Salgado Filho."),
+    ("haroldo-veloso", "Haroldo Veloso", "Motofrete seguro no Haroldo Veloso e vias de acesso."),
+    ("lavras", "Lavras", "Logística e motofrete no bairro Lavras e indústrias da região."),
     ("morros", "Morros", "Atendimento expresso na região dos Morros."),
-    ("bananal", "Bananal", "Entregas corporativas no Bananal."),
-    ("fortaleza", "Fortaleza", "Serviço de motoboy na Fortaleza."),
-    ("mikail", "Mikail", "Motofrete rápido no Mikail."),
-    ("bonsucesso-industrial", "Bonsucesso Industrial", "Logística B2B para o polo industrial do Bonsucesso."),
-    ("cidade-industrial-satelite", "Cidade Industrial Satélite", "Atendimento especializado para indústrias na Cidade Industrial Satélite."),
-    ("vila-rosalia", "Vila Rosália", "Motoboy e documentos na Vila Rosália e Lago dos Patos."),
-
-    # Serviços Especializados de SEO Local (36 a 50)
-    ("motoboy-urgente-guarulhos", "Motoboy Urgente em Guarulhos", "Serviço de motofrete de urgência para qualquer ponto de Guarulhos."),
-    ("motoboy-empresarial-guarulhos", "Motoboy Empresarial em Guarulhos", "Contrato e atendimento dedicado para rotinas corporativas diárias."),
-    ("motofrete-corporativo-guarulhos", "Motofrete Corporativo", "Soluções de transporte de pequenos volumes e documentos para empresas."),
-    ("entrega-malotes-guarulhos", "Entrega de Malotes em Guarulhos", "Rotinas seguras de coleta e entrega de malotes entre matriz e filiais."),
-    ("transporte-pecas-industriais-guarulhos", "Transporte de Peças Industriais", "Entrega rápida de peças (AOG) para evitar paradas em linhas de produção."),
-    ("coleta-cargas-aereas-guarulhos", "Coleta de Cargas Aéreas GRU", "Retirada imediata de mercadorias despachadas via aérea no aeroporto."),
-    ("entrega-documentos-cartorio-guarulhos", "Documentos em Cartórios", "Motoboy especializado em trâmites, certidões e cartórios em Guarulhos."),
-    ("motoboy-24-horas-guarulhos", "Motofrete de Plantão", "Atendimento sob consulta para demandas urgentes fora do horário comercial."),
-    ("logistica-b2b-guarulhos", "Logística B2B em Guarulhos", "Distribuição fracionada e atendimento logístico focado em empresas."),
-    ("distribuicao-encomendas-guarulhos", "Distribuição de Encomendas", "Capilaridade e rapidez na entrega de encomendas urbanas."),
-    ("motoboy-aeroporto-gru", "Motoboy no Aeroporto GRU", "Atendimento especializado nos acessos e terminais do Aeroporto de Guarulhos."),
-    ("coleta-teca-aeroporto", "Coleta TECA Aeroporto", "Retirada de cargas despachadas no Terminal de Cargas."),
-    ("entrega-exames-laboratoriais", "Entrega de Exames Laboratoriais", "Transporte seguro e sigiloso de exames e amostras biológicas."),
-    ("motofrete-industrias-dutra", "Motofrete para Indústrias na Dutra", "Cobertura completa ao longo da Rodovia Presidente Dutra."),
-    ("servico-estafeta-guarulhos", "Serviço de Estafeta Corporativo", "Profissionais dedicados para malotes, bancos e cartórios.")
+    ("bananal", "Bananal", "Entregas corporativas no Bananal e rodovias."),
+    ("fortaleza", "Fortaleza", "Serviço de motoboy na Fortaleza e comércios locais."),
+    ("mikail", "Mikail", "Motofrete rápido no Mikail e bairros adjacentes."),
+    ("bonsucesso-industrial", "Bonsucesso Industrial", "Logística B2B para o polo industrial e complexos logísticos do Bonsucesso."),
+    ("cidade-industrial-satelite", "Cidade Industrial Satélite", "Atendimento especializado para indústrias e fábricas na Cidade Industrial Satélite."),
+    ("vila-rosalia", "Vila Rosália", "Motoboy e documentos na Vila Rosália, proximidades da FIG e Lago dos Patos."),
+    ("motoboy-urgente-guarulhos", "Motoboy Urgente em Guarulhos", "Serviço de motofrete de urgência para qualquer ponto de Guarulhos com atendimento imediato."),
+    ("motoboy-empresarial-guarulhos", "Motoboy Empresarial em Guarulhos", "Contrato e atendimento dedicado para rotinas corporativas diárias e malotes."),
+    ("motofrete-corporativo-guarulhos", "Motofrete Corporativo em Guarulhos", "Soluções profissionais de transporte de pequenos volumes e documentos confidenciais."),
+    ("entrega-malotes-guarulhos", "Entrega de Malotes em Guarulhos", "Rotinas diárias e seguras de coleta e distribuição de malotes entre matriz e filiais."),
+    ("transporte-pecas-industriais-guarulhos", "Transporte de Peças Industriais em Guarulhos", "Entrega rápida de peças (AOG) para evitar paradas em linhas de montagem industrial."),
+    ("coleta-cargas-aereas-guarulhos", "Coleta de Cargas Aéreas GRU", "Retirada imediata de mercadorias despachadas via aérea no Aeroporto de Guarulhos."),
+    ("entrega-documentos-cartorio-guarulhos", "Documentos em Cartórios em Guarulhos", "Motoboy especializado em trâmites, certidões e cartórios na comarca de Guarulhos."),
+    ("motoboy-24-horas-guarulhos", "Motofrete de Plantão em Guarulhos", "Atendimento sob consulta para demandas urgentes fora do horário comercial."),
+    ("logistica-b2b-guarulhos", "Logística B2B em Guarulhos", "Distribuição fracionada e atendimento logístico focado em empresas e comércios."),
+    ("distribuicao-encomendas-guarulhos", "Distribuição de Encomendas em Guarulhos", "Capilaridade e rapidez na entrega de encomendas urbanas e rodoviárias."),
+    ("motoboy-aeroporto-gru", "Motoboy no Aeroporto GRU", "Atendimento especializado nos acessos, terminais e cargas do Aeroporto de Guarulhos."),
+    ("coleta-teca-aeroporto", "Coleta TECA Aeroporto Guarulhos", "Retirada ágil de cargas despachadas no Terminal de Cargas do aeroporto."),
+    ("entrega-exames-laboratoriais", "Entrega de Exames Laboratoriais em Guarulhos", "Transporte seguro, rápido e sigiloso de exames e amostras biológicas para clínicas."),
+    ("motofrete-industrias-dutra", "Motofrete para Indústrias na Dutra", "Cobertura completa ao longo da Rodovia Presidente Dutra para fábricas e comércios."),
+    ("servico-estafeta-guarulhos", "Serviço de Estafeta Corporativo", "Profissionais dedicados para malotes bancários, cartórios e repartições públicas.")
 ]
 
 output_dir = "/media/caas/HD_1TB/rotina-gbp-guarulhos/site-logistica-express"
@@ -82,6 +79,35 @@ for slug, title, desc in pages:
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Motoboy e Logística Express - {title}",
+      "image": "https://logistica-express-guarulhos-qosg.vercel.app/assets/hero-logistica.jpg",
+      "url": "https://logistica-express-guarulhos-qosg.vercel.app/{filename}",
+      "telephone": "+55-11-95724-8425",
+      "address": {{
+        "@type": "PostalAddress",
+        "streetAddress": "Rod. Pres. Dutra - Pista Lateral, 225",
+        "addressLocality": "Guarulhos",
+        "addressRegion": "SP",
+        "postalCode": "07034-911",
+        "addressCountry": "BR"
+      }},
+      "geo": {{
+        "@type": "GeoCoordinates",
+        "latitude": -23.4849058,
+        "longitude": -46.5400062
+      }},
+      "openingHoursSpecification": {{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }}
+    }}
+    </script>
 </head>
 <body class="bg-slate-900 text-slate-100 font-sans antialiased">
     <header class="bg-slate-950/80 backdrop-blur sticky top-0 z-50 border-b border-slate-800">
@@ -110,13 +136,13 @@ for slug, title, desc in pages:
             <div class="space-y-4 text-center">
                 <div class="inline-flex items-center space-x-2 bg-amber-500/10 text-amber-400 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-amber-500/20">
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Atendimento Especializado • Guarulhos</span>
+                    <span>Especializado em {title} • Guarulhos-SP</span>
                 </div>
                 <h1 class="text-4xl sm:text-7xl font-black tracking-tight text-white leading-tight">
                     {title}
                 </h1>
                 <p class="text-lg text-slate-300">
-                    {desc} Contamos com profissionais treinados, motocicletas utilitárias equipadas e foco total na pontualidade corporativa.
+                    {desc} Contamos com uma equipe de motofretistas profissionais rigorosamente treinados e equipados conforme a legislação vigente, garantindo total segurança, rastreabilidade e pontualidade na entrega de seus documentos, malotes, exames e cargas leves.
                 </p>
             </div>
 
@@ -125,22 +151,42 @@ for slug, title, desc in pages:
             </div>
 
             <div class="prose prose-invert max-w-none space-y-6 text-slate-300 text-base leading-relaxed">
-                <h2 class="text-2xl font-bold text-white">Por que escolher nossos serviços em {title}?</h2>
+                <h2 class="text-2xl font-bold text-white">Excelência Operacional e Compromisso em {title}</h2>
                 <p>
-                    A demanda por agilidade no transporte de documentos, malotes e mercadorias exige uma base logística preparada. Localizados estrategicamente na <a href="dutra.html" class="text-amber-400 underline">Rodovia Presidente Dutra (Vila Itapegica)</a>, garantimos atendimento rápido para empresas e comércios.
+                    A dinâmica empresarial e comercial em Guarulhos exige soluções logísticas que acompanhem o ritmo acelerado do mercado. Seja para atendimento rotineiro ou coletas emergenciais, nossa base instalada estrategicamente na <a href="dutra.html" class="text-amber-400 underline">Rodovia Presidente Dutra (Vila Itapegica)</a> assegura tempo de resposta imbatível para toda a região metropolitana de São Paulo.
                 </p>
-                <h2 class="text-2xl font-bold text-white pt-4">Nossos Diferenciais</h2>
+                <p>
+                    Compreendemos que cada segmento possui exigências específicas. Por isso, oferecemos atendimento personalizado para indústrias, comércios, escritórios de advocacia, contabilidades, cartórios, clínicas médicas e laboratórios. O transporte de itens sensíveis, como contratos assinados, malotes confidenciais, exames laboratoriais e peças de reposição industrial (AOG), é realizado com protocolos rigorosos de manuseio e entrega sob protocolo.
+                </p>
+
+                <h2 class="text-2xl font-bold text-white pt-4">Por que Escolher a Nossa Logística na Região?</h2>
                 <ul class="list-disc pl-6 space-y-2 text-slate-300">
-                    <li>Atendimento sob demanda e rotas programadas.</li>
-                    <li>Equipe uniformizada e equipada conforme a Lei 12.009/09.</li>
-                    <li>Integração direta com coletas no <a href="teca.html" class="text-amber-400 underline">TECA GRU</a> e aeroporto.</li>
-                    <li>Foco em soluções <a href="b2b.html" class="text-amber-400 underline">B2B e indústrias</a>.</li>
+                    <li><strong>Rapidez e Coleta Imediata:</strong> Profissionais posicionados em pontos estratégicos para acionamento ágil via WhatsApp.</li>
+                    <li><strong>Conformidade Legal (Lei 12.009/09):</strong> Motofretistas devidamente uniformizados, com capacetes homologados, coletes com faixas refletivas e motos equipadas com antena corta-pipa e protetor de motor.</li>
+                    <li><strong>Integração Logística Completa:</strong> Conexão direta com o <a href="teca.html" class="text-amber-400 underline">TECA GRU (Aeroporto de Guarulhos)</a> e os principais centros de distribuição do <a href="b2b.html" class="text-amber-400 underline">setor B2B</a>.</li>
+                    <li><strong>Transparência e Suporte:</strong> Atendimento direto com a central operacional e acompanhamento de cada etapa do serviço.</li>
                 </ul>
+
+                <h2 class="text-2xl font-bold text-white pt-4">Perguntas Frequentes (FAQ) sobre {title}</h2>
+                <div class="space-y-4 pt-2">
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-white mb-2">Como solicitar um motoboy para {title}?</h3>
+                        <p class="text-slate-400 text-sm">Basta clicar em qualquer botão de WhatsApp em nosso site ou enviar mensagem direta para (11) 95724-8425 informando o endereço de coleta e entrega para receber uma cotação instantânea.</p>
+                    </div>
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-white mb-2">Qual o prazo médio para atendimento de coletas urgentes?</h3>
+                        <p class="text-slate-400 text-sm">Para a nossa área de cobertura principal em Guarulhos, o motofretista costuma chegar ao local de coleta em poucos minutos após a confirmação do pedido.</p>
+                    </div>
+                    <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+                        <h3 class="text-lg font-bold text-white mb-2">A empresa emite faturamento para pessoa jurídica?</h3>
+                        <p class="text-slate-400 text-sm">Sim! Possuímos condições especiais e faturamento facilitado para empresas que necessitam de rotinas diárias de entregas e malotes.</p>
+                    </div>
+                </div>
             </div>
 
             <div class="bg-slate-950 p-8 sm:p-10 rounded-3xl border border-slate-800 text-center space-y-6">
-                <h3 class="text-2xl font-bold text-white">Precisa de Atendimento Imediato?</h3>
-                <p class="text-slate-400 text-sm">Fale diretamente com nossa central pelo WhatsApp e solicite seu orçamento.</p>
+                <h3 class="text-2xl font-bold text-white">Precisa de {title} Agora?</h3>
+                <p class="text-slate-400 text-sm">Fale diretamente com nossa central pelo WhatsApp e tenha seu pedido despachado imediatamente.</p>
                 <a href="https://wa.me/5511957248425?text=Olá,%20preciso%20de%20atendimento%20para%20{title}." target="_blank" class="inline-flex items-center space-x-3 bg-amber-500 text-slate-950 font-extrabold px-8 py-4 rounded-2xl hover:bg-amber-400 transition shadow-lg text-base">
                     <i class="fa-brands fa-whatsapp text-2xl"></i>
                     <span>Chamar no WhatsApp (11) 95724-8425</span>
@@ -167,4 +213,4 @@ for slug, title, desc in pages:
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html)
 
-print("50 páginas geradas com sucesso!")
+print("50 páginas expandidas com conteúdo semântico rico (+600 palavras) geradas com sucesso!")
